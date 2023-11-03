@@ -67,3 +67,16 @@ CUDA_VISIBLE_DEVICES=0 python -u train_desc.py \
     --fc-hidden-size-str '128,64,32,1'
 
 ```
+
+## Evaluate results
+```bash
+#!/bin/bash
+
+set -x
+
+inpath=$1  # input 'res.csv'
+eval_field_name='C1'
+# each field in "C1 C2 C3 C4 C5 C6 C7 C8 C9 C10 C11 C12 C13 C14 C15 C16 C17 C18 C19 C20 C21 C22 C23 C24 C25 C26" for CRETIO data
+# each field in "101 121 122 124 125 126 127 128 129 205 206 207 210 216 508 509 702 853 301 109_14 110_14 127_14 150_14" for AliCCP data
+python3 eval/eval_res.py ${inpath} ${eval_field_name}
+```
