@@ -16,7 +16,7 @@ We recommended the following dependencies.
 
 
 ## Download public data
-1. CRETIO data set can be downloaded from this [link](https://www.kaggle.com/c/criteo-display-ad-challenge).
+1. CRITEO data set can be downloaded from this [link](https://www.kaggle.com/c/criteo-display-ad-challenge).
 2. AliCCP data set can be downloaded from this [link](https://tianchi.aliyun.com/datalab/dataSet.html?dataId=408).
 3. Industrial data set will be published soon.
 
